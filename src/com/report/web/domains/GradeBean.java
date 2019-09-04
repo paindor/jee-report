@@ -2,29 +2,12 @@ package com.report.web.domains;
 
 import java.io.Serializable;
 
-public class MemberBean implements Serializable {
+public class GradeBean implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
-	private String name, stuNum, ssn;
+	
 	private String kor , eng , math, society;
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getStuNum() {
-		return stuNum;
-	}
-	public void setStuNum(String stuNum) {
-		this.stuNum = stuNum;
-	}
-	public String getSsn() {
-		return ssn;
-	}
-	public void setSsn(String ssn) {
-		this.ssn = ssn;
-	}
+	
 	public String getKor() {
 		return kor;
 	}
@@ -51,9 +34,7 @@ public class MemberBean implements Serializable {
 	}
 	@Override
 	public String toString() {
-		return "MemberBean [name=" + name + ", stuNum=" + stuNum + ", ssn=" + ssn + ", kor=" + kor + ", eng=" + eng
-				+ ", math=" + math + ", society=" + society + "]";
+		return "MemberBean [kor=" + kor + ", eng=" + eng + ", math=" + math + ", society=" + society + "]";
 	}
-	
 
 }

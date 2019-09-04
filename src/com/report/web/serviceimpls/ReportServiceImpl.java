@@ -2,7 +2,7 @@ package com.report.web.serviceimpls;
 
 import com.report.web.daos.ReportDAO;
 import com.report.web.doimpls.ReportDAOImpl;
-import com.report.web.domains.MemberBean;
+import com.report.web.domains.GradeBean;
 import com.report.web.services.ReportService;
 
 public class ReportServiceImpl implements ReportService{
@@ -14,11 +14,11 @@ public class ReportServiceImpl implements ReportService{
 		// TODO Auto-generated constructor stub
 	}
 	@Override
-	public void createStuNum(MemberBean param) {
+	public void createStuNum(GradeBean param) {
 		// TODO Auto-generated method stub
-		String stnum = createHakbun(param.getSsn());
+	//	String stnum = createHakbun(param.getSsn());
 		
-		param.setStuNum(stnum);
+		//param.setStuNum(stnum);
 		
 		
 		

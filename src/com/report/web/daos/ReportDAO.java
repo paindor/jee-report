@@ -1,10 +1,10 @@
 package com.report.web.daos;
 
-import com.report.web.domains.MemberBean;
+import com.report.web.domains.GradeBean;
 
 public interface ReportDAO {
 	
-	public void insertReport(MemberBean param);
+	public void insertReport(GradeBean param);
 
 
 

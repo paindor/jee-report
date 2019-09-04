@@ -3,23 +3,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <meta charset="UTF-8">
-<title>성적표</title>
+<title>비트대학교</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-<form id = "report" action="<%=request.getContextPath() %>/report.do">
-	이름<input type="text"name = "name" /> <br />
-	주민번호<input type="text"name = "ssn" /> <br />
-	국어<input type="text"name = "kor" /> <br />
-	영어<input type="text"name = "eng"/> <br />
-	수학<input type="text"name = "math" /> <br />
-	사회<input type="text"name = "sciety"/> <br />
-	<input type="submit" value = "작성 "/> 
-</form>
+<div>
+    <h2>환영합니다</h2>
+   	<table border = '1'>
+   		<tr>
+   			<td>로그인</td>
+   			<td><input id = "btn" type="button"value = "LOGIN" /></td>
+   		</tr>
+   		<tr>
+   			<td>학생부등록</td>
+   			<td><a id = "a_register" href="#">바로가기</a></td>
+   		</tr>
+   	</table>
+</div>
 <script>
-$('#report').submit(function () {
-	alert('입력완료');
+$('#btn').click(function() {
+	alert('버튼클릭');
+	location.assign('<%=request.getContextPath()%>/student.do?action=move&dest=login');
+	
+});
+$('#a_register').click(function() {
+	alert('바로가즈아');
+	location.assign('<%=request.getContextPath()%>/student.do?action=move&dest=register');
 });
 </script>
 </body>
